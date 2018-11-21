@@ -1,0 +1,13 @@
+[Unit]
+Description=The world's first HDD-mined cryptocurrency using an energy efficient and fair Proof-of-Capacity (PoC) consensus algorithm.
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/etc/burstcoin-wallet/
+ExecStart=/usr/bin/java -classpath /etc/burstcoin-wallet/burst.jar:/etc/burstcoin-wallet/conf brs.Burst
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
