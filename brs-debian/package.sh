@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-archive_name="burstcoin-2.2.7.zip"
-wget https://github.com/PoC-Consortium/burstcoin/releases/download/2.2.7/burstcoin-2.2.7.zip
+archive_name="burstcoin-2.3.0.zip"
+wget https://github.com/burst-apps-team/burstcoin/releases/download/v2.3.0/burstcoin-2.3.0.zip
 
 mkdir -p build/etc/burstcoin-wallet/
 mkdir -p build/etc/systemd/system/
