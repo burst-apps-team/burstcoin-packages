@@ -3,6 +3,7 @@ language: generic
 script:
   - cd brs-debian
   - ./package.sh
+  - cd ../
 
 deploy:
   provider: releases
