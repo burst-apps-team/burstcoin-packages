@@ -1,11 +1,13 @@
 language: generic
 
-script: ./package.sh
+script:
+  - cd brs-debian
+  - ./package.sh
 
 deploy:
   provider: releases
   api_key: $API_KEY
-  file: "burstcoin-wallet.deb"
+  file: "brs-debian/burstcoin-wallet.deb"
   skip_cleanup: true
   on:
     tags: true
